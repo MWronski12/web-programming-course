@@ -1,0 +1,11 @@
+In the first practical work I created a profile card page, which contains basic infromation about me.
+
+I used the following tailwind components template: https://tailwindcomponents.com/component/profile-page
+
+Background, text and border colors were set using inner style tag in the head of the html document.
+
+All the rest of the styles were provided by the template and are implemented by using tailwind framework.
+
+All the data is now static and hardcoded in the index.html file.
+
+The source code can be found in this github repo: https://github.com/MWronski12/web-programming-course
