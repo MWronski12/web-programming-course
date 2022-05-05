@@ -1,0 +1,9 @@
+Project from cp1 was integrated into node/express framework project.
+
+express.static is used to serve static files.
+
+Static data about the profile is now fetched from the api.
+
+For now only one endpoint - /profile is used to fetch all the necessary data, but api can also return specific info like - /profile/first-name.
+
+Complete code for the project can be found on github: https://github.com/MWronski12/web-programming-course

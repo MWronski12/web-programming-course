@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "firstName": "Mikołaj",
+        "lastName": "wroński",
+        "gender": "male",
+        "phoneNumber": "+48 577 030 500",
+        "currentAddress": "Carolino Ramos 60, Viana do Castelo",
+        "permanentAddress": "Walecznych 3/5, Warsaw",
+        "email": "mikolajwronski@ipvc.pt",
+        "birthdate": "12.08.2000",
+        "course": "Internet of Things Engineering",
+        "university": "Warsaw University of Technology"
+    }
+}

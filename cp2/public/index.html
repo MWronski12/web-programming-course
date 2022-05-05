@@ -8,23 +8,7 @@
     <title>My CV</title>
 
     <!-- component -->
-    <style>
-        :root {
-            --main-color: #4a76a8;
-        }
-
-        .bg-main-color {
-            background-color: var(--main-color);
-        }
-
-        .text-main-color {
-            color: var(--main-color);
-        }
-
-        .border-main-color {
-            border-color: var(--main-color);
-        }
-    </style>
+    <link rel="stylesheet" href="/main.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
@@ -55,7 +39,7 @@
                         <button @click="open = !open"
                             class="flex flex-row items-center space-x-2 w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent hover:bg-blue-800 md:w-auto md:inline md:mt-0 md:ml-4 hover:bg-gray-200 focus:bg-blue-800 focus:outline-none focus:shadow-outline">
                             <span>Mikołaj Wroński</span>
-                            <img class="inline h-6 rounded-full" src="./mikolaj.jpg" />
+                            <img class="inline h-6 rounded-full" src="/mikolaj.jpg" />
                             <svg fill="currentColor" viewBox="0 0 20 20"
                                 :class="{'rotate-180': open, 'rotate-0': !open}"
                                 class="inline w-4 h-4 transition-transform duration-200 transform">
@@ -95,7 +79,7 @@
                     <!-- Profile Card -->
                     <div class="bg-white p-3 border-t-4 border-green-400">
                         <div class="image overflow-hidden">
-                            <img class="h-auto w-full mx-auto" src="./mikolaj.jpg" alt="">
+                            <img class="h-auto w-full mx-auto" src="/mikolaj.jpg" alt="">
                         </div>
                         <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">Mikołaj Wroński</h1>
                         <h3 class="text-gray-600 font-lg text-semibold leading-6">Owner at Deskshop</h3>
@@ -137,39 +121,37 @@
                             <div class="grid md:grid-cols-2 text-sm">
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">First Name</div>
-                                    <div id="first-name" class="px-4 py-2">Mikołaj</div>
+                                    <div id="first-name" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Last Name</div>
-                                    <div id="last-name" class="px-4 py-2">Wroński</div>
+                                    <div id="last-name" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Gender</div>
-                                    <div id="gender" class="px-4 py-2">Male</div>
+                                    <div id="gender" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Contact No.</div>
-                                    <div id="phone-number" class="px-4 py-2">+48 577 030 500</div>
+                                    <div id="phone-number" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Current Address</div>
-                                    <div id="current-address" class="px-4 py-2">Carolino Ramos 60, Viana do Castelo
-                                    </div>
+                                    <div id="current-address" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Permanent Address</div>
-                                    <div id="permanent-address" class="px-4 py-2">Walecznych 3/5, Warsaw</div>
+                                    <div id="permanent-address" class="px-4 py-2"></div>
                                 </div>
                                 <div class="grid grid-cols-2">
-                                    <div class="px-4 py-2 font-semibold">Email.</div>
+                                    <div class="px-4 py-2 font-semibold">Email</div>
                                     <div class="px-4 py-2">
-                                        <a id="email" class="text-blue-800"
-                                            href="mailto:jane@example.com">mikolaj.wronski@ipvc.pt</a>
+                                        <a id="email" class="text-blue-800" href="mailto:jane@example.com"></a>
                                     </div>
                                 </div>
                                 <div class="grid grid-cols-2">
                                     <div class="px-4 py-2 font-semibold">Birthdate</div>
-                                    <div id="birthdate" class="px-4 py-2">12.08.2000</div>
+                                    <div id="birthdate" class="px-4 py-2"></div>
                                 </div>
                             </div>
                         </div>
@@ -234,6 +216,9 @@
             </div>
         </div>
     </div>
+
+    <!-- After html document is loaded! -->
+    <script src="/main.js"></script>
 </body>
 
 </html>
